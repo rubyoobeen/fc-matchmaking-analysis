@@ -1,0 +1,30 @@
+.tableau-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.tableau-cta-text {
+  color: #555;
+  font-size: 1rem;
+  max-width: 32rem;
+}
+
+.tableau-button {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: #1a3a2a; /* swap for your accent green */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.tableau-button:hover {
+  opacity: 0.85;
+}
