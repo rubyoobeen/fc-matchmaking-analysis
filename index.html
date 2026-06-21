@@ -5,32 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EA FC Match Analysis — Is the Game Unfair?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="hero">
-  <div class="eyebrow">EA FC Online — Match Analysis</div>
-  <h1>Does squad power decide the match before kickoff?</h1>
-  <p>An analysis of season cards, squad grade, and win rate across hundreds of thousands of EA FC Online matches — looking for where the game rewards spending, and where skill still wins out.</p>
+  <svg class="pitch-lines" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <line x1="-40" y1="40" x2="1240" y2="40" stroke="rgba(238,241,238,0.08)" stroke-width="2"/>
+    <line x1="850" y1="-40" x2="850" y2="680" stroke="rgba(238,241,238,0.14)" stroke-width="2"/>
+    <circle cx="850" cy="320" r="170" stroke="rgba(238,241,238,0.14)" stroke-width="2" fill="none"/>
+    <circle cx="850" cy="320" r="3" fill="rgba(238,241,238,0.18)"/>
+    <polyline points="-40,420 60,420 60,680" stroke="rgba(238,241,238,0.10)" stroke-width="2" fill="none"/>
+  </svg>
+  <div class="hero-content">
+    <div class="eyebrow">EA FC Online — Match Analysis</div>
+    <h1>Does squad power decide the match before kickoff?</h1>
+    <p>An analysis of season cards, squad grade, and win rate across hundreds of thousands of EA FC Online matches — looking for where the game rewards spending, and where skill still wins out.</p>
 
-  <div class="stats">
-    <div class="stat">
-      <span class="num">40% → 60%</span>
-      <div class="label">Win rate climb as squad grade gap widens (0–5 pts)</div>
-    </div>
-    <div class="stat">
-      <span class="num">300K+</span>
-      <div class="label">Matches behind the trustworthy range of that finding</div>
-    </div>
-    <div class="stat">
-      <span class="num">~0</span>
-      <div class="label">Effect of individual card grade alone on win/loss</div>
-    </div>
-    <div class="stat">
-      <span class="num">12</span>
-      <div class="label">High-volume players compared across their own seasons</div>
+    <div class="stats">
+      <div class="stat">
+        <span class="num">30K</span>
+        <div class="label">Matches analyzed</div>
+      </div>
+      <div class="stat">
+        <span class="num">70K</span>
+        <div class="label">Match details captured (2 linked accounts)</div>
+      </div>
+      <div class="stat">
+        <span class="num">1M+</span>
+        <div class="label">Individual player appearances logged</div>
+      </div>
+      <div class="stat">
+        <span class="num">500K+</span>
+        <div class="label">Shots tracked across all matches</div>
+      </div>
     </div>
   </div>
 </header>
@@ -73,28 +82,24 @@
       <p>Looking at individual high-volume players across their own different seasons tells the same story at a personal level: the same player's win rate shifts depending on which card they're using — evidence that card version, not raw stats alone, shapes outcomes.</p>
     </div>
   </div>
-
-</main>
-
-<section class="explore">
-  <div class="eyebrow">Explore the data</div>
-  <h2>Interactive shot map</h2>
-  <p>Click any player-season in the table to load their shots onto the pitch, then narrow further with the filters on the right.</p>
-  <ul>
-    <li>Click a row (player + season) to load that player's shots</li>
-    <li>Filter by shot result — goal, on target, off target</li>
-    <li>Filter by shot type — header, volley, free-kick, penalty, and more</li>
-  </ul>
-
-  <div class="tableau-frame">
-    <div class="tableau-cta">
-      <p class="tableau-cta-text">The interactive dashboard is hosted on Tableau — open it in a new tab to explore.</p>
-      <a class="tableau-button" href="https://prod-ca-a.online.tableau.com/t/yoobeenhong-2036786249/views/ea-analysis_17819455784200/Dashboard1" target="_blank" rel="noopener noreferrer">
-        Open interactive shot map ↗
-      </a>
+  <div class="finding">
+    <div>
+      <div class="tag">Finding 04</div>
+      <h2>The most-played squad members are also the most recognizable</h2>
+      <p class="sub">Top players by appearance count, win rate included</p>
+    </div>
+    <div class="finding-body">
+      <p>Ranking individual players by how often they appear across the captured matches turns up a familiar list of names — Son Heung-min, Lee Kang-in, Lúcio, Luke Shaw, Dani Carvajal, Karim Benzema, Achraf Hakimi, and other widely recognizable real-world talent. Pick frequency tracks closely with public name recognition, more so than with any single in-game performance metric in the dataset.</p>
+      <p>The dashboard below shows exactly how often each of these players gets picked and what win rate they carry. Click into any player-season to see where their shots land on the pitch — filterable by result (goal, on target, off target) and by shot type (header, volley, free-kick, penalty, and more).</p>
+      <div class="finding-cta">
+        <a class="tableau-button" href="https://prod-ca-a.online.tableau.com/t/yoobeenhong-2036786249/views/ea-analysis_17819455784200/Dashboard1" target="_blank" rel="noopener noreferrer">
+          Open interactive shot map ↗
+        </a>
+      </div>
     </div>
   </div>
-</section>
+
+</main>
 
 <footer>
   EA FC Online Match Analysis — built in Tableau, exploring squad composition and match fairness
