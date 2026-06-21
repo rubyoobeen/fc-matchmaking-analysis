@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/60s-scoreboard');
+
 :root{
   --pitch-dark:#0c1f14;
   --pitch:#123622;
@@ -48,6 +50,7 @@ h1,h2,h3,.eyebrow{font-family:'Anton',sans-serif;}
   margin-bottom:18px;
 }
 .hero h1{
+  font-family:'60s Scoreboard', 'Anton', sans-serif;
   font-size:clamp(34px,5vw,58px);
   font-weight:700;
   margin:0 0 18px;
