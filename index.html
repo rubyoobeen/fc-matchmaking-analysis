@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EA FC Match Analysis — Is the Game Unfair?</title>
+<title>What Actually Wins Matches in EA FC Online</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -11,33 +11,33 @@
 <body>
 
 <header class="hero">
-  <svg class="pitch-lines" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <line x1="-40" y1="40" x2="1240" y2="40" stroke="rgba(233,245,236,0.10)" stroke-width="2"/>
-    <line x1="850" y1="-40" x2="850" y2="680" stroke="rgba(233,245,236,0.16)" stroke-width="2"/>
-    <circle cx="850" cy="320" r="170" stroke="rgba(233,245,236,0.16)" stroke-width="2" fill="none"/>
-    <circle cx="850" cy="320" r="3" fill="rgba(233,245,236,0.2)"/>
-    <polyline points="-40,420 60,420 60,680" stroke="rgba(233,245,236,0.12)" stroke-width="2" fill="none"/>
+  <svg class="pitch-lines" viewBox="0 0 1600 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;">
+    <line x1="-50" y1="20" x2="1650" y2="20" stroke="rgba(233,245,236,0.10)" stroke-width="2"/>
+    <line x1="950" y1="-50" x2="950" y2="570" stroke="rgba(233,245,236,0.16)" stroke-width="2"/>
+    <circle cx="950" cy="260" r="135" stroke="rgba(233,245,236,0.16)" stroke-width="2" fill="none"/>
+    <circle cx="950" cy="260" r="3" fill="rgba(233,245,236,0.2)"/>
+    <polyline points="-50,330 90,330 90,570" stroke="rgba(233,245,236,0.12)" stroke-width="2" fill="none"/>
   </svg>
   <div class="hero-content">
     <div class="eyebrow">EA FC Online — Match Analysis</div>
-    <h1>Does squad power decide the match before kickoff?</h1>
-    <p>An analysis of season cards, squad grade, and win rate across hundreds of thousands of EA FC Online matches — looking for where the game rewards spending, and where skill still wins out.</p>
+    <h1>What actually wins matches in EA FC Online</h1>
+    <p>37,306 matches, broken down to see what really predicts a win — squad strength, card grade, or which season you're playing.</p>
 
     <div class="stats">
       <div class="stat">
-        <span class="num">30K+</span>
+        <span class="num">37,306</span>
         <div class="label">Matches analyzed</div>
       </div>
       <div class="stat">
-        <span class="num">70K+</span>
+        <span class="num">74,612</span>
         <div class="label">Match details captured (2 linked accounts)</div>
       </div>
       <div class="stat">
-        <span class="num">1M+</span>
+        <span class="num">1.34M</span>
         <div class="label">Individual player appearances logged</div>
       </div>
       <div class="stat">
-        <span class="num">500K+</span>
+        <span class="num">568,260</span>
         <div class="label">Shots tracked across all matches</div>
       </div>
     </div>
@@ -45,52 +45,56 @@
 </header>
 
 <main>
+  <svg class="pitch-lines-light" viewBox="0 0 1600 1400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;">
+    <line x1="-50" y1="1380" x2="1650" y2="1380" stroke="rgba(18,54,34,0.07)" stroke-width="2"/>
+    <line x1="420" y1="1380" x2="420" y2="850" stroke="rgba(18,54,34,0.09)" stroke-width="2"/>
+    <circle cx="420" cy="1380" r="160" stroke="rgba(18,54,34,0.09)" stroke-width="2" fill="none"/>
+    <polyline points="1650,80 1450,80 1450,-50" stroke="rgba(18,54,34,0.07)" stroke-width="2" fill="none"/>
+  </svg>
+  <div class="main-content">
 
   <div class="finding">
     <div>
       <div class="tag">Finding 01</div>
-      <h2>Squad strength gap predicts who wins — up to a point</h2>
-      <p class="sub">Team A vs Team B, by average squad grade</p>
+      <h2>Squad strength gap predicts outcome — up to a point</h2>
+      <p class="sub">Win rate by squad-grade gap · 300,000+ matches</p>
     </div>
     <div class="finding-body">
-      <p>Every match was split into a stronger and weaker side by average squad grade. As the gap between the two sides grows, the stronger side's win rate climbs steadily — from an even <strong>40%</strong> at a near-zero gap up to roughly <strong>60%</strong> once the gap reaches about five grade points.</p>
-      <p>This holds firmly across <strong>300,000+ matches</strong>. Beyond a five-point gap, match volume drops into the hundreds and the trend becomes too noisy to trust — so the conclusion is intentionally bounded to the range the data actually supports.</p>
-      <div class="callout">A bigger squad-grade advantage does translate into more wins — but the effect is gradual, not dominant. Even at the largest reliable gaps, the stronger side still loses roughly 4 in 10 matches.</div>
+      <p>Win rate climbs from <strong>40% to 60%</strong> as the gap widens to 5 grade points — beyond that, sample size gets too thin to trust.</p>
+      <div class="callout">Even at the largest reliable gaps, the stronger side still loses about 4 in 10 matches.</div>
     </div>
   </div>
 
   <div class="finding">
     <div>
       <div class="tag">Finding 02</div>
-      <h2>One player's card grade, alone, barely matters</h2>
-      <p class="sub">Individual Sp Grade: winners vs. losers</p>
+      <h2>A player's own grade barely matters</h2>
+      <p class="sub">Individual grade, winners vs. losers</p>
     </div>
     <div class="finding-body">
-      <p>Comparing the average card grade of every player on a winning side against every player on a losing side shows almost no difference. A single player's own grade is a weak predictor of whether <em>their</em> match is won — what matters is how their grade compares to the squad they're facing, not the number on its own.</p>
-      <p>This lines up with an earlier, independent finding from this project's first pass: <strong>season version</strong> (which card — TOTY, ICON, base — not just its grade) explains far more of the variation in performance than grade does by itself.</p>
+      <p>Confirmed twice — in Python and independently in Tableau — a single player's grade shows almost no link to winning. What matters is the matchup, not the number.</p>
     </div>
   </div>
 
   <div class="finding">
     <div>
       <div class="tag">Finding 03</div>
-      <h2>Premium seasons cluster at the top of the win-rate table</h2>
-      <p class="sub">Win rate by season type, sample-size filtered</p>
+      <h2>Season version is the real driver</h2>
+      <p class="sub">Same player, different cards</p>
     </div>
     <div class="finding-body">
-      <p>Ranking every season by win rate — after filtering out low-sample seasons that aren't statistically trustworthy — shows premium and special-edition cards (TOTY, ICON TM, KLeague, Heroes, New Generation) disproportionately near the top of the list.</p>
-      <p>Looking at individual high-volume players across their own different seasons tells the same story at a personal level: the same player's win rate shifts depending on which card they're using — evidence that card version, not raw stats alone, shapes outcomes.</p>
+      <p>One player's conversion rate swung up to <strong>4x</strong> across his own cards. Premium seasons (TOTY, ICON TM, Heroes) dominate the win-rate rankings.</p>
     </div>
   </div>
+
   <div class="finding">
     <div>
-      <div class="tag">Finding 04</div>
-      <h2>The most-played squad members are also the most recognizable</h2>
-      <p class="sub">Top players by appearance count, win rate included</p>
+      <div class="tag">Explore</div>
+      <h2>See it yourself in the live dashboard</h2>
+      <p class="sub">Bonus: pick rate tracks fame, too</p>
     </div>
     <div class="finding-body">
-      <p>Ranking individual players by how often they appear across the captured matches turns up a familiar list of names — Son Heung-min, Lee Kang-in, Lúcio, Luke Shaw, Dani Carvajal, Karim Benzema, Achraf Hakimi, and other widely recognizable real-world talent. Pick frequency tracks closely with public name recognition, more so than with any single in-game performance metric in the dataset.</p>
-      <p>The dashboard below shows exactly how often each of these players gets picked and what win rate they carry. Click into any player-season to see where their shots land on the pitch — filterable by result (goal, on target, off target) and by shot type (header, volley, free-kick, penalty, and more).</p>
+      <p>Son Heung-min, Benzema, Carvajal — recognizable names top the pick list. Click into any player-season below to see their shots on the pitch.</p>
       <div class="finding-cta">
         <a class="tableau-button" href="https://prod-ca-a.online.tableau.com/t/yoobeenhong-2036786249/views/ea-analysis_17819455784200/Dashboard1" target="_blank" rel="noopener noreferrer">
           Open interactive shot map ↗
@@ -99,6 +103,7 @@
     </div>
   </div>
 
+  </div>
 </main>
 
 <footer>
